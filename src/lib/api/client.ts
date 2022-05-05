@@ -11,7 +11,7 @@ const options = {
 }
 
 const client = applyCaseMiddleware(axios.create({
-  baseURL: "http://localhost:3011/api/v1"
+  baseURL: process.env.REACT_APP_URL+"/api/v1"
 }), options)
 
 export default client
