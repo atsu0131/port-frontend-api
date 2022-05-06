@@ -180,7 +180,7 @@ const Home: React.FC = () => {
                   <Grid item>
                     <Avatar
                       alt="avatar"
-                      src={currentUser?.image.url}
+                      src={currentUser?.image?.url}
                       className={classes.avatar}
                     />
                   </Grid>
