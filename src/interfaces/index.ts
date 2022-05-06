@@ -6,7 +6,7 @@ export interface SignUpData {
   passwordConfirmation: string
   gender: number
   prefecture: number
-  birthday: String | number | Date
+  birthday: Date
   image: string
 }
 

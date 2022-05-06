@@ -86,7 +86,7 @@ const Home: React.FC = () => {
 
   // 生年月日から年齢を計算する 年齢 = floor((今日 - 誕生日) / 10000)
   const currentUserAge = (): number | void => {
-    const birthday = currentUser?.birthday.toString().replace(/-/g, "") || ""
+    const birthday = currentUser?.birthday?.toString()?.replace(/-/g, "") || ""
     if (birthday.length !== 8) return
 
     const date = new Date()
