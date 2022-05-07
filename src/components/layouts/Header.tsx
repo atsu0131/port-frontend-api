@@ -87,7 +87,7 @@ const Header: React.FC = () => {
 
   return (
     <>
-      <AppBar position="static">
+      <AppBar position="static" style={{ color: "#e0f2f1", backgroundColor: "#004d40" }}>
         <Toolbar>
           <Typography
             component={Link}
