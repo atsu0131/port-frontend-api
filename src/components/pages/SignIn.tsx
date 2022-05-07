@@ -45,7 +45,10 @@ const SignIn: React.FC = () => {
   const classes = useStyles()
   const history = useHistory()
 
-  const { setIsSignedIn, setCurrentUser } = useContext(AuthContext)
+  const { isSignedIn, setIsSignedIn, currentUser, setCurrentUser } = useContext(AuthContext)
+  if(isSignedIn && currentUser){
+    history.push("/home")
+  }
 
   const [email, setEmail] = useState<string>("")
   const [password, setPassword] = useState<string>("")

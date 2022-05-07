@@ -70,7 +70,10 @@ const SignUp: React.FC = () => {
   const classes = useStyles()
   const histroy = useHistory()
 
-  const { setIsSignedIn, setCurrentUser } = useContext(AuthContext)
+  const { isSignedIn, setIsSignedIn, currentUser, setCurrentUser } = useContext(AuthContext)
+  if(isSignedIn && currentUser){
+    histroy.push("/home")
+  }
 
   const [name, setName] = useState<string>("")
   const [email, setEmail] = useState<string>("")
