@@ -74,3 +74,8 @@ export interface Message {
   content: string
   createdAt?: Date
 }
+
+export interface Todo {
+  id?: number
+  title: string
+} 
