@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Switch, Route, Redirect } from "react-router-d
 
 import CommonLayout from "components/layouts/CommonLayout"
 import Home from "components/pages/Home"
+import Index from "components/pages/Index"
 import ChatRooms from "components/pages/ChatRooms"
 import ChatRoom from "components/pages/ChatRoom"
 import Users from "components/pages/Users"
@@ -73,6 +74,7 @@ const App: React.FC = () => {
             <Private>
               <Switch>
                 <Route exact path="/home" component={Home} />
+                <Route exact path="/index" component={Index} />
                 <Route exact path="/users" component={Users} />
                 <Route exact path="/chat_rooms" component={ChatRooms} />
                 <Route path="/chatroom/:id" component={ChatRoom} />

@@ -11,6 +11,7 @@ import ExitToAppIcon from "@material-ui/icons/ExitToApp"
 import PersonIcon from "@material-ui/icons/Person"
 import SearchIcon from "@material-ui/icons/Search"
 import ChatBubbleIcon from "@material-ui/icons/ChatBubble"
+import SupervisorAccountIcon from '@mui/icons-material/SupervisorAccount';
 
 import { AuthContext } from "App"
 
@@ -36,6 +37,15 @@ const Header: React.FC = () => {
       if (isSignedIn) {
         return (
           <>
+            <IconButton
+              component={Link}
+              to="/index"
+              edge="start"
+              className={classes.linkBtn}
+              color="inherit"
+            >
+              <SupervisorAccountIcon />
+            </IconButton>
             <IconButton
               component={Link}
               to="/users"
